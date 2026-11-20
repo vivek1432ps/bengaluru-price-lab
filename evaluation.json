@@ -1,0 +1,33 @@
+{
+  "model": "Gradient boosting",
+  "clean_rows": 12000,
+  "fit_rows": 7228,
+  "selection_rows": 1189,
+  "calibration_rows": 2428,
+  "test_rows": 2344,
+  "localities": 136,
+  "selection_mae_lakh": {
+    "Global median": 60.03,
+    "Ridge": 49.61,
+    "Gradient boosting": 31.29
+  },
+  "test_metrics": {
+    "Global median": {
+      "mae_lakh": 66.68,
+      "rmse_lakh": 156.45,
+      "r2": -0.081
+    },
+    "Ridge": {
+      "mae_lakh": 47.5,
+      "rmse_lakh": 240.2,
+      "r2": -1.548
+    },
+    "Gradient boosting": {
+      "mae_lakh": 35.6,
+      "rmse_lakh": 90.88,
+      "r2": 0.635
+    }
+  },
+  "test_interval_coverage": 0.79,
+  "interval_target": 0.8
+}
